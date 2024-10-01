@@ -3,7 +3,7 @@ from bs4 import BeautifulSoup
 import pandas as pd
 
 def get_top_10_stocks():
-    url = 'https://finance.naver.com/sise/sise_rise.naver?sosok=1'  # 실제 URL로 수정
+    url = 'https://finance.naver.com/sise/sise_rise.naver?sosok=1' 
     response = requests.get(url)
     if response.status_code == 200:
         soup = BeautifulSoup(response.text, 'html.parser')
